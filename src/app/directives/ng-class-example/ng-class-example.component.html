@@ -1,0 +1,14 @@
+<div
+  (click)="interupteur()"
+  [ngClass]="{
+    eteinte: isEteinte,
+    allume: !isEteinte
+  }"
+>
+  ampoule
+</div>
+
+<p *ngIf="!isEteinte" appHighlight [in]="'white'">cc</p>
+<div appHighlight [in]="'black'" [out]="'green'">test</div>
+
+<input type="text" appRainbow />

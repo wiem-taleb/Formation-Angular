@@ -1,0 +1,15 @@
+<p [hidden]="isHidden">{{ name }} works!</p>
+<button class="btn btn-warning" (click)="showHide()">
+  {{ buttonMessage }}
+</button>
+<div class="alert alert-danger">
+  <app-second></app-second>
+</div>
+<input
+  #monInput
+  (change)="changeMessage(monInput.value)"
+  type="text"
+  class="form-control"
+/>
+
+<p>Vous avez écrit {{ inputContent }}</p>
